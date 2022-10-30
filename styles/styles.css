@@ -9,6 +9,7 @@
   --web-logo-color: #2196f3;
   --description-text: #757575;
   --link-active: #188ce8;
+  --header-bottom-color: #ececec;
   --btn-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -21,12 +22,40 @@ body {
 
 /*----------------------reset----------------------*/
 .list-studio,
-.list-portfolio {
+.list-portfolio-item,
+.site-nav-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  display: flex;
+  width: 1200px;
 }
 
 /*----------------------HEADER----------------------*/
 
+.container-nav {
+  border-bottom: 1px solid;
+  border-color: #ececec;
+  justify-content: space-between;
+  align-items: center;
+}
 .header-logo {
   color: #000000;
   text-decoration: none;
@@ -39,7 +68,20 @@ body {
 .web-logo {
   color: var(--web-logo-color);
 }
-
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px;
+}
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.site-nav-list:not(:last-child) {
+  margin-right: 50px;
+}
 .site-nav-item {
   text-decoration: none;
   font-weight: 500;
@@ -55,7 +97,9 @@ body {
 .site-nav-item:active {
   color: var(--link-active);
 }
-
+.header-contacts {
+  display: flex;
+}
 .header-email,
 .header-tel {
   color: var(--description-text);
@@ -161,6 +205,14 @@ body {
 .button-portfolio:focus {
   color: var(--hero-btn-color);
   background-color: var(--link-decoration-color);
+}
+
+.portfolio-menu {
+  justify-content: space-between;
+  flex-direction: row;
+}
+.list-portfolio {
+  flex-direction: column;
 }
 
 .project-title {
