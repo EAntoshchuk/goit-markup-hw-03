@@ -28,7 +28,8 @@ body {
 .list-portfolio-item,
 .site-nav,
 .site-nav-list,
-.header-contacts-list,
+.footer-list,
+.header-contacts,
 .portfolio-menu-item,
 .about-us-list {
   list-style: none;
@@ -54,30 +55,32 @@ img {
 
 .container {
   width: 1200px;
+  padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
 }
 
+.section {
+  padding: 94px 0;
+}
+
 /*----------------------HEADER----------------------*/
-/* .header {
-  padding:
-} */
+
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   border-bottom: 1px solid;
   border-color: #ececec;
 }
 .header-logo {
-  color: #000000;
-  text-decoration: none;
+  margin-right: 93px;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
-  margin-right: 90px;
+  color: #000000;
+  text-decoration: none;
 }
 
 .web-logo {
@@ -138,7 +141,7 @@ img {
 
 /*----------------------Main-----------------*/
 .hero {
-  padding: 200px 450px;
+  padding: 200px 0;
   background-color: #2f303a;
 }
 .hero-title {
@@ -169,6 +172,7 @@ img {
   border-color: transparent;
   cursor: pointer;
 }
+
 .about-us-list {
   display: flex;
 }
@@ -189,7 +193,6 @@ img {
 }
 .cases-section {
   display: flex;
-  padding: 95px 215px;
 }
 .cases,
 .team {
@@ -279,6 +282,11 @@ img {
   border-bottom: 1px solid var(--portfolio-border-color);
   border-left: 1px solid var(--portfolio-border-color);
 }
+
+.portfolio-img {
+  margin-bottom: 20px;
+}
+
 .card-set {
   display: flex;
   flex-wrap: wrap;
@@ -291,11 +299,15 @@ img {
 }
 
 .project-title {
+  margin-bottom: 4px;
+  margin-left: 24px;
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
 }
 .project-description {
+  margin-bottom: 20px;
+  margin-left: 24px;
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
@@ -314,6 +326,7 @@ img {
 }
 
 .footer-logo {
+  display: block;
   margin-bottom: 20px;
   font-family: Raleway, sans-serif;
   font-style: normal;
